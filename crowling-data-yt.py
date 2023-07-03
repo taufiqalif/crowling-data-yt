@@ -7,7 +7,7 @@ from textblob import TextBlob
 import pandas as pd
 
 # Masukkan kunci API YouTube Anda di sini
-API_KEY = 'AIzaSyApnTptNWusgS4-BWf4cy98GW9wqqfBZkc'
+API_KEY = 'key-api'
 
 
 def crawl_popular_videos(max_results):

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Data Video Populer</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Video ID</th>
+        <th>Judul</th>
+        <th>Jumlah Views</th>
+        <th>Jumlah Likes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for video in video_data %}
+      <tr>
+        <td>{{ video['video_id'] }}</td>
+        <td>{{ video['title'] }}</td>
+        <td>{{ video['views'] }}</td>
+        <td>{{ video['likes'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
